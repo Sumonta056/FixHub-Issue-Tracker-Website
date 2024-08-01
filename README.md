@@ -88,6 +88,9 @@ npm install react-hook-form@7.46.1
 npm install axios@1.5.0
 ```
 
+- 
+npm i @hookform/resolvers@3.3.1
+
 ### 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)
