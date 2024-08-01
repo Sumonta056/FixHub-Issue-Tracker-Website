@@ -1,14 +1,15 @@
-## 🥶 "FixHub" - A Issue Tracker Website
+# 🐞 "FixHub" - A Issue Tracker Website
 
-![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![](https://img.shields.io/badge/Radix_UI-6200EE?style=for-the-badge&logo=radix-ui&logoColor=white) ![](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![](https://img.shields.io/badge/Radix_UI-6200EE?style=for-the-badge&logo=radix-ui&logoColor=white) ![](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 
-### 🛖 Features:
+## 🛖 Features:
 
 1. Creating, Viewing, Updating and Deleting Issues
 2. User Authentication and Access Control
 3. Assigning Issues to Users
 4. Filtering & Sorting Issues
 5. Pagination, Charts and Dashboard
+6. Fast and Production level Optimized
 
 ### 📚 Libaries:
 
@@ -61,6 +62,12 @@ npx prisma migrate dev
 
 ```
 npm install zod
+```
+
+- [Radix UI](https://www.radix-ui.com/themes/docs/overview/getting-started) : A collection of low-level UI components and hooks for building high-quality design systems and web apps.
+
+```
+npm install @radix-ui/themes
 ```
 
 ### 🔗 Useful Resources:
