@@ -4,14 +4,15 @@ import { TextField, Button, Callout, Text } from "@radix-ui/themes";
 import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
 import { MdCancel } from "react-icons/md";
-import { IoIosCloudDone } from "react-icons/io";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, set } from "react-hook-form";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createIssueSchema } from "@/app/validationSchema";
 import { z } from "zod";
+import ErrorMessage from "@/app/components/ErrorMessage";
+import Spinner from "@/app/components/Spinner";
 
 type IssueForm = z.infer<typeof createIssueSchema>;
 
@@ -26,6 +27,7 @@ const NewIssuePage = () => {
     resolver: zodResolver(createIssueSchema),
   });
   const [error, setError] = useState("");
+  const [isSubmitting, setSubmitting] = useState(false);
 
   return (
     <div className="max-w-2xl">
@@ -41,10 +43,11 @@ const NewIssuePage = () => {
         className=" space-y-4"
         onSubmit={handleSubmit(async (data) => {
           try {
+            setSubmitting(true);
             await axios.post("/api/issues", data);
-            alert("Issue created successfully!");
             router.push("/issues");
           } catch (error) {
+            setSubmitting(false);
             setError("Error creating issue. Please try again.");
           }
         })}
@@ -52,11 +55,8 @@ const NewIssuePage = () => {
         <TextField.Root placeholder="Title" {...register("title")}>
           <TextField.Slot />
         </TextField.Root>
-        {errors.title && (
-          <Text color="red" as="p">
-            {errors.title.message}
-          </Text>
-        )}
+        <ErrorMessage>{errors.title?.message}</ErrorMessage>
+
         <Controller
           name="description"
           control={control}
@@ -64,14 +64,13 @@ const NewIssuePage = () => {
             <SimpleMDE placeholder="Write a Issue ...." {...field} />
           )}
         />
-        {errors.description && (
-          <Text color="red" as="p">
-            {errors.description.message}
-          </Text>
-        )}
+
+        <ErrorMessage>{errors.description?.message}</ErrorMessage>
+
         <div className="flex gap-3 pb-5">
-          <Button>
-            <IoIosCloudDone /> Submit New Issue
+          <Button disabled={isSubmitting}>
+            {isSubmitting && <Spinner />}
+            Submit New Issue
           </Button>
           <Button color="red">
             <MdCancel /> Cancel Issue
