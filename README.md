@@ -6,32 +6,17 @@
 - Next.js
 - Tailwind CSS
 - Radix UI
+- MySQL
 - Prisma
 - NextAuth.js
 
 ### 📌 Features:
 
-1. Creating and Issue
-2. Viewing Issues
-3. Updating Issues
-4. Deleting Issues
-5. User Authentication
-6. Assigning Issues
-7. Filtering Issues
-8. Sorting Issues
-9. Pagination
-10. Dashboard
-
-### 📌 Functionalities:
-
-- Dashboard
-- Charts
-- Filtering and Sorting
-- Pagination
-- Form with Client Side Validation
-- User Authentication and Access Control
-- Modal Dialogs and Toast Notifications
-- Fast and Responsive UI
+1. Creating, Viewing, Updating and Deleting Issues
+2. User Authentication and Access Control
+3. Assigning Issues to Users
+4. Filtering & Sorting Issues
+5. Pagination, Charts and Dashboard
 
 ### 📌 Libaries:
 
@@ -60,4 +45,18 @@ className={classNames({
               "hover:text-zinc-800": true,
               "transition-colors": true,
             })}
+```
+
+- [Prisma](https://www.prisma.io/): ORM for TypeScript and Node.js
+
+```
+npm install prisma@5.3.1
+```
+
+```
+npx prisma init
+```
+
+```
+npx prisma format
 ```
