@@ -35,8 +35,29 @@
 
 ### 📌 Libaries:
 
-- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Icons](https://react-icons.github.io/react-icons/) : Useful Icons for NextJs
 
 ```
 npm install react-icons --save
+```
+
+- [Classnames](https://www.npmjs.com/package/classnames) : A simple utility for conditionally joining class names together.
+
+```
+npm i classnames@2.3.2
+```
+
+```css
+ className={`${
+              link.href === currentPath ? "text-black font-semibold" : "text-zinc-500"
+            }  hover:text-zinc-800 transition-colors`}
+```
+
+```css
+className={classNames({
+              "text-black font-semibold": link.href === currentPath,
+              "text-zinc-500": link.href !== currentPath,
+              "hover:text-zinc-800": true,
+              "transition-colors": true,
+            })}
 ```
