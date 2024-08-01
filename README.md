@@ -70,6 +70,24 @@ npm install zod
 npm install @radix-ui/themes
 ```
 
+- [React Simple MD Editor](https://www.npmjs.com/package/react-simplemde-editor) : A simple markdown editor for React
+
+```
+npm install --save react-simplemde-editor easymde
+```
+
+- [React Hook Form](https://react-hook-form.com/) : Performant, flexible and extensible forms with easy-to-use validation.
+
+```
+npm install react-hook-form@7.46.1
+```
+
+- [Axios](https://axios-http.com/docs/intro) : Promise based HTTP client for the browser and node.js
+
+```
+npm install axios@1.5.0
+```
+
 ### 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)

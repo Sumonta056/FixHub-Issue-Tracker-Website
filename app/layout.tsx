@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
+import { Theme, ThemePanel } from "@radix-ui/themes";
 import { Roboto } from "next/font/google";
 import NavBar from "./NavBar";
 
 const inter = Roboto({
   weight: "400",
   subsets: ["latin"],
+  variable: '--font-roboto'
 });
 
 export const metadata: Metadata = {
@@ -22,10 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme>
+      <body className={inter.variable}>
+        <Theme accentColor="iris" scaling="105%">
           <NavBar />
-          <main className="p-5">{children}</main>
+          <main className="px-8">{children}</main>
+          {/* <ThemePanel /> */}
         </Theme>
       </body>
     </html>
