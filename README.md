@@ -102,6 +102,10 @@ npm i delay
 
 npm i react-loading-skeleton@3.3.1
 
+npm i react-markdown@8.0.7
+
+npm install -D @tailwindcss/typography
+
 ## 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)
