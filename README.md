@@ -94,6 +94,14 @@ npm install axios@1.5.0
 npm i @hookform/resolvers@3.3.1
 ```
 
+-[Delay](https://www.npmjs.com/package/delay) : Delay a promise a specified amount of time
+
+```
+npm i delay
+```
+
+npm i react-loading-skeleton@3.3.1
+
 ## 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)
