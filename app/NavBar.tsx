@@ -13,7 +13,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex space-x-6 border-b mb-6 px-6 h-16 items-center">
+    <nav className="mx-auto max-w-5xl flex space-x-6 border-b mb-6 px-6 h-16 items-center">
       <Link href="/">
         <FaBug size={20} />
       </Link>

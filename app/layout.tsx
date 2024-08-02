@@ -8,7 +8,7 @@ import NavBar from "./NavBar";
 const inter = Roboto({
   weight: "400",
   subsets: ["latin"],
-  variable: '--font-roboto'
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.variable}>
-        <Theme accentColor="iris" scaling="105%">
+        <Theme accentColor="cyan" scaling="110%">
           <NavBar />
           <main className="px-8">{children}</main>
           {/* <ThemePanel /> */}

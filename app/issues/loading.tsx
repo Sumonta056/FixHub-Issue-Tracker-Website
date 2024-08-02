@@ -8,7 +8,7 @@ const loadingIssuesPage = () => {
   const issues = [1, 2, 3, 4, 5];
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="mx-auto flex flex-col gap-3 max-w-4xl">
       <IssueActions />
       <Table.Root variant="surface">
         <Table.Header>
