@@ -14,7 +14,7 @@ import { z } from "zod";
 import ErrorMessage from "@/app/components/ErrorMessage";
 import Spinner from "@/app/components/Spinner";
 
-type IssueForm = z.infer<typeof createIssueSchema>;
+type IssueForm = z.infer<typeof createIssueSchema>; // interface + validation check
 
 const NewIssuePage = () => {
   const router = useRouter();
@@ -25,7 +25,7 @@ const NewIssuePage = () => {
     formState: { errors },
   } = useForm<IssueForm>({
     resolver: zodResolver(createIssueSchema),
-  });
+  }); // handle form input and validation
   const [error, setError] = useState("");
   const [isSubmitting, setSubmitting] = useState(false);
 
