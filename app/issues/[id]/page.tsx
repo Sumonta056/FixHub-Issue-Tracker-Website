@@ -17,12 +17,12 @@ const IssueDetailsPage = async ({ params }: Props) => {
 
   if (!issue) notFound();
   return (
-    <div className="mx-auto flex flex-col items-center max-w-7xl">
-      <Grid columns="3fr 1fr" width="auto" className="w-full">
-        <Box width="auto">
+    <div className="mx-auto w-3/4">
+      <Grid columns="4fr 2fr" width="auto" className="w-full gap-4">
+        <Box>
           <IssueDetails issue={issue} />
         </Box>
-        <Box className="w-full">
+        <Box>
           <EditIssueButton issueId={issue.id} />
         </Box>
       </Grid>
