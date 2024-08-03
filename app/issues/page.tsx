@@ -33,7 +33,7 @@ const IssuesPage = async () => {
                 <IssueStatusBadge status={issue.status} />
               </Table.Cell>
               <Table.Cell className="hidden md:table-cell">
-              <Code size="2">{issue.createdAt.toDateString()}</Code>
+                <Code size="2">{issue.createdAt.toDateString()}</Code>
               </Table.Cell>
             </Table.Row>
           ))}
@@ -42,5 +42,5 @@ const IssuesPage = async () => {
     </div>
   );
 };
-
+export const revalidate = 60;
 export default IssuesPage;
