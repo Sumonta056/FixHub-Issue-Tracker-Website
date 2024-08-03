@@ -94,19 +94,32 @@ npm install axios@1.5.0
 npm i @hookform/resolvers@3.3.1
 ```
 
--[Delay](https://www.npmjs.com/package/delay) : Delay a promise a specified amount of time
+- **[Delay](https://www.npmjs.com/package/delay)** : Delay a promise a specified amount of time
 
 ```
 npm i delay
 ```
 
+- **[React Loading Skeleton](https://www.npmjs.com/package/react-loading-skeleton)** : A React component to easily create loading skeletons
+
+```
 npm i react-loading-skeleton@3.3.1
+```
 
+- **[React Markdown](https://www.npmjs.com/package/react-markdown)** : Markdown component for React
+
+```
 npm i react-markdown@8.0.7
+```
 
+- **[Tailwind Typography](https://www.npmjs.com/package/@tailwindcss/typography)** : A plugin for Tailwind CSS that provides a set of prose classes to help you design rich text content.
+
+```
 npm install -D @tailwindcss/typography
+```
 
 ## 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)
+- [ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061) solve](https://youtu.be/9haB3XP3FME?si=RrDhuNMpWIx27Gcd)
 - [TW Elements](https://tw-elements.com/)
