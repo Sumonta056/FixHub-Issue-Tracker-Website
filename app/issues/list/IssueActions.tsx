@@ -7,7 +7,10 @@ const IssueActions = () => {
   return (
     <div className="">
       <Link href="/issues/new">
-        <Button color="indigo">
+        <Button
+          color="indigo"
+          size="3"
+      >
           <FaBookmark /> New Issue
         </Button>
       </Link>

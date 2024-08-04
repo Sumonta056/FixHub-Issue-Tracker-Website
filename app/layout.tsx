@@ -4,6 +4,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from "@radix-ui/themes";
 import { Roboto } from "next/font/google";
 import NavBar from "./NavBar";
+import AuthProvider from "./auth/Provider";
 
 const inter = Roboto({
   weight: "400",
@@ -24,11 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.variable}>
-        <Theme accentColor="cyan" scaling="110%">
-          <NavBar />
-          <main className="px-8">{children}</main>
-          {/* <ThemePanel /> */}
-        </Theme>
+        <AuthProvider>
+          <Theme accentColor="cyan" scaling="110%">
+            <NavBar />
+            <main className="px-8">{children}</main>
+            {/* <ThemePanel /> */}
+          </Theme>
+        </AuthProvider>
       </body>
     </html>
   );

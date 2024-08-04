@@ -20,7 +20,7 @@ const IssueDetailsPage = async ({ params }: Props) => {
   return (
     <div className="mx-auto max-w-5xl">
       <Grid columns="3fr 1fr" width="auto" gap="4">
-        <Box>
+        <Box className="p-4 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
           <IssueDetails issue={issue} />
         </Box>
         <Box>

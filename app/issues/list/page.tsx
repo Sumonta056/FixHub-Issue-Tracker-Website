@@ -8,7 +8,7 @@ const IssuesPage = async () => {
   const issues = await prisma.issue.findMany();
   await delay(3000);
   return (
-    <div className="mx-auto flex flex-col gap-3 max-w-4xl">
+    <div className="mx-auto flex flex-col gap-3 max-w-5xl shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  p-7">
       <IssueActions />
       <Table.Root variant="surface">
         <Table.Header>

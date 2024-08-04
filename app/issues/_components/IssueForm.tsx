@@ -52,7 +52,11 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
   });
 
   return (
-    <div className="mx-auto max-w-5xl flex flex-col">
+    <div
+      className="mx-auto max-w-5xl flex flex-col p-7
+   shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]
+    "
+    >
       {error && (
         <Callout.Root color="red" className="mb-5">
           <Callout.Icon>
@@ -82,7 +86,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
 
         <ErrorMessage>{errors.description?.message}</ErrorMessage>
 
-        <div className="flex gap-3 pb-5">
+        <div className="flex gap-3">
           <Button disabled={isSubmitting}>
             {isSubmitting && <Spinner />}
             {!isSubmitting && <IoIosCloudDone />}
