@@ -75,6 +75,34 @@ npx prisma migrate dev
 
 <hr>
 
+### Authentication and Authorization:
+
+- **[NextAuth.js](https://next-auth.js.org/)** : Authentication for Next.js
+
+```
+ npm i next-auth@4.23.1  --legacy-peer-deps
+```
+
+- Generate a random base64 string:(NextAuth.js Secret)
+
+```javascript
+const crypto = require('crypto');
+
+function generateRandomBase64(length) {
+  return crypto.randomBytes(length).toString('base64');
+}
+
+const randomBase64String = generateRandomBase64(32);
+console.log(randomBase64String);
+```
+
+-
+```
+npm i @next-auth/prisma-adapter@1.0.7 --legacy-peer-deps
+```
+
+- [](https://console.cloud.google.com/welcome?project=rent-it-bb70f)
+
 ### Validation and Forms:
 
 - **[Zod](https://zod.dev/)** : A TypeScript-first schema declaration and validation library.
