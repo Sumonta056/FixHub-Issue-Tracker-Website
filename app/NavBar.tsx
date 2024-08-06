@@ -2,27 +2,26 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaBug } from "react-icons/fa";
 import classNames from "classnames";
 import { useSession } from "next-auth/react";
 import { Avatar, Box, DropdownMenu, Flex, Text } from "@radix-ui/themes";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Image from "next/image";
+import Icon from "@/app/assets/icon.png";
 
 const NavBar = () => {
-  const currentPath = usePathname();
-
-  const links = [
-    { label: "Dashboard", href: "/" },
-    { label: "Issues", href: "/issues/list" },
-  ];
-
   return (
     <nav className="mx-auto max-w-5xl border-b mb-6 px-6 py-5 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
       <Flex justify="between">
         <Flex align="center" gap="4">
           <Link href="/">
-            <FaBug size={20} />
+            <Image
+              src={Icon}
+              width={30}
+              height={30}
+              alt="Picture of the author"
+            />
           </Link>
           <NavLinks />
         </Flex>
@@ -34,7 +33,6 @@ const NavBar = () => {
 
 const NavLinks = () => {
   const currentPath = usePathname();
-
   const links = [
     { label: "Dashboard", href: "/" },
     { label: "Issues", href: "/issues/list" },
@@ -64,14 +62,12 @@ const NavLinks = () => {
 
 const AuthStatus = () => {
   const { status, data: session } = useSession();
-
   if (status === "loading") return <Skeleton width="10rem" />;
-
   if (status === "unauthenticated")
     return (
       <Link
         className={classNames({
-          "text-zinc-500" :true,
+          "text-zinc-500": true,
           "hover:text-zinc-800": true,
           "transition-colors": true,
         })}

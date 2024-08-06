@@ -77,10 +77,15 @@ npx prisma migrate dev
 
 ### Authentication and Authorization:
 
+- **[Goolge Cloud Console](https://console.cloud.google.com/welcome?project=issuetracker-431504)** : Google Account Login and OAuth
+
 - **[NextAuth.js](https://next-auth.js.org/)** : Authentication for Next.js
 
 ```
  npm i next-auth@4.23.1  --legacy-peer-deps
+```
+```
+npm i @next-auth/prisma-adapter@1.0.7 --legacy-peer-deps
 ```
 
 - Generate a random base64 string:(NextAuth.js Secret)
@@ -96,12 +101,7 @@ const randomBase64String = generateRandomBase64(32);
 console.log(randomBase64String);
 ```
 
--
-```
-npm i @next-auth/prisma-adapter@1.0.7 --legacy-peer-deps
-```
-
-- [](https://console.cloud.google.com/welcome?project=rent-it-bb70f)
+<hr>
 
 ### Validation and Forms:
 
@@ -177,10 +177,17 @@ npm i delay
 npm install -D @tailwindcss/typography
 ```
 
+-
+```
+npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
+```
+
 <hr>
 
 ## 🔗 Useful Resources:
 
 - [How to Use VS Code to Run SQL on a Database](https://www.youtube.com/watch?v=C0y35FpiLRAs)
+- [Tailwind CSS Shadow generator](https://ui.aceternity.com/tools/box-shadows)
 - [ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061) solve](https://youtu.be/9haB3XP3FME?si=RrDhuNMpWIx27Gcd)
 - [TW Elements](https://tw-elements.com/)
+- [Image to Favicon Icon Generator](https://favicon.io/favicon-converter/)
