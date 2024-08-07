@@ -177,9 +177,15 @@ npm i delay
 npm install -D @tailwindcss/typography
 ```
 
--
+- **[Tans React Query](https://tanstack.com/query/latest)** : A data-fetching library for React
 ```
 npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
+```
+
+- **[React Hot Toast](https://react-hot-toast.com/)** : A configurable and versatile toast notification for React
+
+```
+npm i react-hot-toast@2.4.1 
 ```
 
 <hr>
@@ -191,3 +197,4 @@ npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
 - [ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061) solve](https://youtu.be/9haB3XP3FME?si=RrDhuNMpWIx27Gcd)
 - [TW Elements](https://tw-elements.com/)
 - [Image to Favicon Icon Generator](https://favicon.io/favicon-converter/)
+

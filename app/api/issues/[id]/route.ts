@@ -12,6 +12,7 @@ export async function PATCH(
   const session = await getServerSession(authOptions);
   if (!session)
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
   const body = await request.json();
   const validation = patchIssueSchema.safeParse(body);
 
@@ -19,29 +20,28 @@ export async function PATCH(
     return NextResponse.json(validation.error.format(), { status: 400 });
   }
 
-  if (body.assignedToUserId) {
-    const user = await prisma.user.findUnique({
-      where: { id: body.assignedToUserId },
-    });
+  const { assignedToUserId, title, description } = body;
 
+  if (assignedToUserId) {
+    const user = await prisma.user.findUnique({
+      where: { id: assignedToUserId },
+    });
     if (!user)
-      return NextResponse.json({ error: "User not found" }, { status: 404 });
+      return NextResponse.json({ error: "Invalid user." }, { status: 400 });
   }
 
   const issue = await prisma.issue.findUnique({
     where: { id: parseInt(params.id) },
   });
-
-  if (!issue) {
-    return NextResponse.json({ error: "Issue not found" }, { status: 404 });
-  }
+  if (!issue)
+    return NextResponse.json({ error: "Invalid issue" }, { status: 404 });
 
   const updatedIssue = await prisma.issue.update({
     where: { id: issue.id },
     data: {
-      title: body.title,
-      description: body.description,
-      assignedToUserId: body.assignedToUserId,
+      title,
+      description,
+      assignedToUserId,
     },
   });
 
