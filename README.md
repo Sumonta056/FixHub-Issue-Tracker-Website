@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Sumonta056/FixHub-Issue-Tracker-Website" target="blank">
-  <img src="./app/assets/icon.png" width="120" alt="Logo" /></a>
+  <img src="./app/assets/icon.png" width="80" alt="Logo" /></a>
 
   <h2> FixHub: A Complete Fullstack Issue Tracker </h2>
 
@@ -12,7 +12,7 @@
 
 **FixHub** is a powerful and intuitive issue tracker built using **Next.js and SQL**, designed to streamline bug management and project tracking. With a focus on efficiency and user-friendliness, FixHub allows for seamless creation, viewing, updating, and deletion of issues. Key features include:
 
-#### 🛖 Features:
+## 🛖 Features:
 
 1. **User Authentication and Access Control:** Secure login and personalized access levels ensure that only authorized users can manage or view issues.
 2. **Issue Assignment:** Creating, Viewing, Updating and Deleting Issues. Assign tasks to team members effortlessly, keeping everyone accountable and informed.
@@ -21,8 +21,6 @@
 5. **Production-Ready Optimization:** Built for speed and reliability, FixHub is optimized for production environments, ensuring smooth performance at scale.
 
 Whether you're a solo developer or part of a large team, FixHub is the perfect tool for tracking and resolving issues with ease.🐞
-
-<hr>
 
 ## 📚 Libaries:
 
@@ -198,7 +196,7 @@ npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
 npm i react-hot-toast@2.4.1
 ```
 
-<hr>
+
 
 ## 🔗 Useful Resources:
 
