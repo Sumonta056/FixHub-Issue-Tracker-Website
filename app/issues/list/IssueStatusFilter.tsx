@@ -15,6 +15,7 @@ const IssueStatusFilter = () => {
     return (
         <>
             <Select.Root
+                size="3"
                 defaultValue={searchParams.get('status') || ''}
                 onValueChange={(status) => {
                     const params = new URLSearchParams();
@@ -25,7 +26,7 @@ const IssueStatusFilter = () => {
                     const query = params.size ? '?' + params.toString() : '';
                     router.push('/issues/list' + query);
                 }} >
-                <Select.Trigger placeholder='Filter by status ....' />
+                <Select.Trigger placeholder='Filter by status ....' variant="classic"  color="red"/>
                 <Select.Content>
                     {statuses.map(status => (
                         <Select.Item key={status.value} value={status.value}>
