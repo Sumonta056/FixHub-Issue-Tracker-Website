@@ -1,6 +1,14 @@
-## 🐞 FixHub: A Complete Fullstack Issue Tracker
+<div align="center">
+  <a href="https://github.com/Sumonta056/FixHub-Issue-Tracker-Website" target="blank">
+  <img src="./app/assets/icon.png" width="120" alt="Logo" /></a>
+
+  <h2> FixHub: A Complete Fullstack Issue Tracker </h2>
 
 ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![](https://img.shields.io/badge/Radix_UI-6200EE?style=for-the-badge&logo=radix-ui&logoColor=white) ![](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+</div>
+
+## ✨ Description:
 
 **FixHub** is a powerful and intuitive issue tracker built using **Next.js and SQL**, designed to streamline bug management and project tracking. With a focus on efficiency and user-friendliness, FixHub allows for seamless creation, viewing, updating, and deletion of issues. Key features include:
 
@@ -84,6 +92,7 @@ npx prisma migrate dev
 ```
  npm i next-auth@4.23.1  --legacy-peer-deps
 ```
+
 ```
 npm i @next-auth/prisma-adapter@1.0.7 --legacy-peer-deps
 ```
@@ -91,10 +100,10 @@ npm i @next-auth/prisma-adapter@1.0.7 --legacy-peer-deps
 - Generate a random base64 string:(NextAuth.js Secret)
 
 ```javascript
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 function generateRandomBase64(length) {
-  return crypto.randomBytes(length).toString('base64');
+  return crypto.randomBytes(length).toString("base64");
 }
 
 const randomBase64String = generateRandomBase64(32);
@@ -178,6 +187,7 @@ npm install -D @tailwindcss/typography
 ```
 
 - **[Tans React Query](https://tanstack.com/query/latest)** : A data-fetching library for React
+
 ```
 npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
 ```
@@ -185,7 +195,7 @@ npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
 - **[React Hot Toast](https://react-hot-toast.com/)** : A configurable and versatile toast notification for React
 
 ```
-npm i react-hot-toast@2.4.1 
+npm i react-hot-toast@2.4.1
 ```
 
 <hr>
@@ -197,4 +207,3 @@ npm i react-hot-toast@2.4.1
 - [ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061) solve](https://youtu.be/9haB3XP3FME?si=RrDhuNMpWIx27Gcd)
 - [TW Elements](https://tw-elements.com/)
 - [Image to Favicon Icon Generator](https://favicon.io/favicon-converter/)
-
