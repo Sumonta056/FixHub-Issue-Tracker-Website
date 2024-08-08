@@ -3,9 +3,22 @@ import { Code, Table } from "@radix-ui/themes";
 import delay from "delay";
 import { IssueStatusBadge, Link } from "@/app/components";
 import IssueActions from "./IssueActions";
+import { Status } from "@prisma/client";
 
-const IssuesPage = async () => {
-  const issues = await prisma.issue.findMany();
+interface Props {
+  searchParams: { status: Status };
+}
+
+const IssuesPage = async ({ searchParams }: Props) => {
+
+  const statuses = Object.values(Status);
+  const status = statuses.includes(searchParams.status) ? searchParams.status : undefined;
+
+  const issues = await prisma.issue.findMany({
+    where: {
+      status,
+    },
+  });
   await delay(3000);
   return (
     <div className="mx-auto flex flex-col gap-3 max-w-5xl shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  p-7">
