@@ -33,7 +33,7 @@ const IssuesPage = async ({ searchParams }: Props) => {
   await delay(2000);
 
   return (
-    <div className="mx-auto flex flex-col gap-5 max-w-5xl shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  p-7">
+    <div className="mx-auto flex flex-col gap-2 max-w-5xl shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] py-5 px-5">
       <IssueActions />
       <IssueTable searchParams={searchParams} issues={issues} />
       <Pagination
