@@ -196,6 +196,11 @@ npm i @tanstack/react-query@4.35.3 --legacy-peer-deps
 npm i react-hot-toast@2.4.1
 ```
 
+- **[React Chart.js](https://www.npmjs.com/package/react-chartjs-2)** : React wrapper for Chart.js
+
+```
+npm i recharts@2.8.0 --legacy-peer-deps
+```
 
 
 ## 🔗 Useful Resources:
@@ -205,3 +210,5 @@ npm i react-hot-toast@2.4.1
 - [ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061) solve](https://youtu.be/9haB3XP3FME?si=RrDhuNMpWIx27Gcd)
 - [TW Elements](https://tw-elements.com/)
 - [Image to Favicon Icon Generator](https://favicon.io/favicon-converter/)
+
+
